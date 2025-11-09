@@ -1,200 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stephanie Harry | Technical & Proposal Writer • RevOps Documentation Strategist</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #f5f5f5;
-      line-height: 1.75;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #c0d8d8;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #999;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      color: #90c3c8;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.5rem;
-    }
-    h3 {
-      color: #c0d8d8;
-      margin-top: 2rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li, dd {
-      margin-bottom: 1rem;
-    }
-    a {
-      color: #90c3c8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #333;
-      color: #fff;
-      border: 1px solid #90c3c8;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .button:hover {
-      background-color: #90c3c8;
-      color: #000;
-    }
-    section p.justified { 
-      text-align: justify;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Harry - Portfolio</title>
+    <!-- 1. Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        .project-card {
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin: 0.25rem 0;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background-color: #3b82f6; /* Blue-500 */
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Blue-600 */
+        }
+        .btn-secondary {
+            background-color: #6b7280; /* Gray-500 */
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563; /* Gray-600 */
+        }
+        .icon {
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            vertical-align: text-bottom;
+        }
+        /* Styles for the "Work Samples" list */
+        .sample-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .sample-list li {
+            margin-bottom: 1.5rem; /* 24px */
+        }
+        .sample-list-category {
+            font-weight: 700; /* bold */
+            color: #111827; /* gray-900 */
+            font-size: 1.125rem; /* text-lg */
+            margin-bottom: 0.5rem; /* 8px */
+        }
+        .sample-list-description {
+            color: #4b5563; /* gray-600 */
+            margin-bottom: 0.75rem; /* 12px */
+        }
+        .sample-list-links a {
+            display: inline-block;
+            color: #3b82f6; /* blue-500 */
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 1.5rem; /* 24px */
+            transition: all 0.2s ease;
+        }
+        .sample-list-links a:hover {
+            color: #1d4ed8; /* blue-700 */
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Stephanie Harry</h1>
-    <p>Technical Writer | Proposal Specialist | RevOps & Data Analyst</p>
-  </header>
-  <div class="container">
-    <section>
+<body class="text-gray-800">
 
- <!-- ===== ABOUT ===== -->
-	<section>
-      <h2>About Me</h2>
-      <p class="justified">
-        I build clarity into complex systems—whether through technical documentation, proposal development, or revenue operations support.
-        My focus is structure, compliance, and communication—helping teams document processes that are accurate, scalable, and audit-ready.
-      </p>
-      <p class="justified">
-        With experience spanning SaaS, accessibility, and public-sector compliance, I specialize in:
-      </p>
-      <ul>
-        <li><strong>Technical &amp; Regulatory Documentation</strong> (SOPs, SDLC, Accessibility)</li>
-        <li><strong>Proposal &amp; RFP Development</strong> (compliance narratives, evaluations, templates)</li>
-        <li><strong>RevOps Process Documentation</strong> (CRM workflows, data accuracy, cross-team alignment)</li>
-      </ul>
-      <p class="justified">
-        I bridge technical, operational, and business documentation—ensuring each process is clearly defined, repeatable, and effective.
-      </p>
-    </section>
+    <div class="max-w-4xl mx-auto p-6 sm:p-12">
 
-   <!-- ===== RESUME ===== -->
-    <section>
-      <h2>Résumé</h2>
-      <p class="justified">My résumé highlights a blend of technical documentation, proposal compliance, and process optimization work—spanning SaaS, accessibility, and regulated environments.
-</p>
-      <a class="button" href="StephanieHarry2025TW.pdf" target="_blank">Download Résumé (PDF)</a>
-    </section>
+        <!-- Header Section -->
+        <header class="text-center sm:text-left">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">Stephanie Harry</h1>
+            <p class="text-xl sm:text-2xl font-medium text-blue-600 mt-2">
+                REVENUE OPERATIONS & DATA | TECHNICAL WRITING & ENABLEMENT
+            </p>
+            <div class="flex justify-center sm:justify-start gap-x-6 mt-6">
+                <a href="mailto:steffharry@smarciz.com" class="text-gray-600 hover:text-blue-600 font-medium">Email</a>
+                <a href="https://linkedin.com/in/smarciz" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 font-medium">LinkedIn</a>
+                <!-- Link to your TW resume, from your old file -->
+                <a href="StephanieHarry2025TW.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 font-medium">Download Résumé </a>
+            </div>
+        </header>
 
-    <!-- ===== Skills ===== -->
-    <section>
-      <h2>Technical Skills</h2>
-      <dl>
-        <dt>Writing & Documentation</dt>
-        <dd>Confluence, Jira, Adobe Acrobat, Microsoft 365</dd>
+        <hr class="my-10 border-gray-300">
 
-        <dt>Proposal & RevOps</dt>
-        <dd>CRM (Zoho, Hubspot), Proposal Management Software (e.g., Loopio), RFPio</dd>
+        <!-- Intro Blurb -->
+        <p class="text-lg text-gray-700 leading-relaxed">
+            I specialize in the "Process Improvement Loop": I identify systemic problems, build the data-driven solutions to fix them, and write the clear documentation and training to scale the fix across the company.
+        </p>
 
-        <dt>Data & Process Tools</dt>
-        <dd>Proficient with SQL for data extraction and validation; experienced with Excel (Pivot Tables, data cleanup); familiar with Tableau and BI dashboards for process insights.</dd>
-      </dl>
-    </section>
+        <!-- ================================== -->
+        <!-- REV OPS & DATA SECTION             -->
+        <!-- ================================== -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2">
+                Revenue Operations & Data Analysis
+            </h2>
+            <p class="text-md text-gray-600 mt-4">
+                My Rev Ops work focuses on building scalable CRM workflows, tracking performance analytics, and optimizing processes to reduce manual work and improve data accuracy.
+            </p>
+
+            <!-- 
+              ****************************************************************
+              * "UNICORN PROJECT" CALLOUT
+              * Your #1 Priority. When you finish your Power BI
+              * dashboard, update this section!
+              ****************************************************************
+            -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
+                <h3 class="text-2xl font-bold text-blue-800">In Progress: Power BI "Unicorn" Project</h3>
+                <p class="text-blue-700 mt-2 mb-4">
+                    I am currently building a real-time Power BI dashboard to analyze a 30% order-entry error rate at my current role. This project identifies the root cause of inefficiencies and provides actionable insights for leadership.
+                </p>
+                <!-- NOTE: These are placeholders. Upload your files and update the 'href' -->
+                <a class="btn btn-primary opacity-50 cursor-not-allowed">
+                    View Executive Summary (Coming Soon)
+                </a>
+                <a class="btn btn-secondary opacity-50 cursor-not-allowed mt-2 sm:mt-0">
+                    View Dashboard (Coming Soon)
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+
+                <!-- Project 1: From your current site - LINK NOW COMMENTED OUT -->
+                <div class="project-card rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-gray-900">CRM Data Integrity Audit (RevOps)</h3>
+                    <p class="text-gray-700 mt-3 mb-4">
+                        Analyzed 10,000+ Zoho contact records using SQL and Excel to identify duplicates, incomplete entries, and aged data. Delivered a prioritized cleanup plan that improved overall data accuracy by 35%.
+                    </p>
+                    
+                    <!-- 
+                      TODO: Create a PDF for this (e.g., "CRM_Data_Audit_Plan.pdf"),
+                      upload it to your 'samples/' folder, and then uncomment this
+                      button block and update the href link.
+                    -->
+                    <!--
+                    <a href="samples/CRM_Data_Audit_Plan.pdf" target="_blank" class="btn btn-secondary w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+                        View Prioritized Cleanup Plan (PDF)
+                    </a>
+                    -->
+                </div>
+
+                <!-- Project 2: From your current site - LINK NOW COMMENTED OUT -->
+                <div class="project-card rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Proposal Win/Loss Analysis</h3>
+                    <p class="text-gray-700 mt-3 mb-4">
+                        Reviewed two years of proposal data and FOIA results to determine key variables influencing outcomes. Identified three primary loss categories and provided direct recommendations to leadership.
+                    </p>
+
+                    <!-- 
+                      TODO: Create a PDF for this (e.g., "Proposal_Analysis_Template.pdf"),
+                      upload it to your 'samples/' folder, and then uncomment this
+                      button block and update the href link.
+                    -->
+                    <!--
+                    <a href="samples/Proposal_Analysis_Template.pdf" target="_blank" class="btn btn-secondary w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.992 0l3.181 3.183a8.25 8.25 0 0011.667 0l3.181-3.183m0-4.992v4.992m0 0h-4.992m4.992 0l-3.181-3.182a8.25 8.25 0 00-11.667 0l-3.181 3.182" /></svg>
+                        View Analysis & New Template (PDF)
+                    </a>
+                    -->
+                </div>
+
+            </div>
+        </section>
 
 
+        <!-- ================================== -->
+        <!-- TECH WRITING & ENABLEMENT SECTION  -->
+        <!-- ================================== -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2">
+                Selected Work Samples
+            </h2>
+            <p class="text-md text-gray-600 mt-4">
+                A collection of my work, including security policies, training materials, and SOPs. All samples have been scrubbed to remove confidential or identifying information.
+            </p>
 
-    <!-- ===== Highlights ===== -->
-    <section>
-  <h2>Data-Driven Projects</h2>
-  <dl>
-    <dt>CRM Data Integrity Audit (RevOps)</dt>
-    <dd>Analyzed 10,000+ Zoho contact records using SQL and Excel to identify duplicates, incomplete entries, and aged data. Delivered a prioritized cleanup plan that improved overall data accuracy by 35% and increased sales-qualified lead conversion in the following quarter.</dd>
+            <!-- This is the list-based layout populated with your REAL links -->
+            <div class="sample-list mt-8">
+                <ul>
+                    <!-- Category 1: Security & Compliance -->
+                    <li>
+                        <h3 class="sample-list-category">Security & Compliance</h3>
+                        <p class="sample-list-description">A collection of meticulously crafted documents aimed at ensuring adherence to external compliance standards and regulatory requirements. These include audit reports, security policies, compliance checklists, and documentation for standards such as SOC2, VPAT, and State/FEDRAMP.</p>
+                        <div class="sample-list-links">
+                            <a href="samples/AntiSlavery Statement.pdf" target="_blank">Anti-Slavery & Human Trafficking Policy</a>
+                            <a href="samples/SteffHarrySE_SSP_A_CMP_V1_20220901.pdf" target="_blank">Configuration Management Policy (CMP)</a>
+                            <a href="samples/SteffHarrySE_SSP_A_ISCM_V1_20220901.pdf" target="_blank">System Monitoring Plan (ISCM)</a>
+                            <a href="samples/steffHarry-Redacted- AT_POL_V1.0_20220901.pdf" target="_blank">Security Policy for Awareness & Training</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Category 2: Training - Client Facing -->
+                    <li>
+                        <h3 class="sample-list-category">Training & Manuals - Client Facing</h3>
+                        <p class="sample-list-description">Comprehensive training and help documents designed for clients. These resources include both technical and non-technical materials to enhance user understanding, simplify complex concepts, and ensure a seamless client experience.</p>
+                        <div class="sample-list-links">
+                            <a href="samples/About SSO - Redacted Sharry.pdf" target="_blank">About SSO</a>
+                            <a href="samples/SteffHarry_ClientFacingSecurity - Redacted.pdf" target="_blank">Security Overview</a>
+                        </div>
+                    </li>
 
-    <dt>Proposal Win/Loss Analysis</dt>
-    <dd>Reviewed two years of proposal data and FOIA results to determine key variables influencing outcomes. Identified three primary loss categories and provided direct recommendations to leadership and personally updated the core proposal templates to better address our weaknesses, leading to a new, more effective bidding strategy.</dd>
-  </dl>
-</section>
+                    <!-- Category 3: Training - Employee/Internal -->
+                    <li>
+                        <h3 class="sample-list-category">Training & Manuals - Employee/Internal</h3>
+                        <p class="sample-list-description">Internal training documents aimed at equipping employees with essential knowledge and skills. Here you'll find materials on various policies and procedures, product knowledge, and compliance requirements.</p>
+                        <div class="sample-list-links">
+                             <a href="samples/Redacted Security Training  stephanieharry.pdf" target="_blank">Security Training</a>
+                             <a href="samples/SteffHarry_Redacted_updated Security and Use Policy.pdf" target="_blank">Security and Use Policy</a>
+                             <a href="samples/SteffHarryRedacted Data Integration.pdf" target="_blank">Data Integration Training</a>
+                        </div>
+                    </li>
 
+                    <!-- Category 4: Corporate Communications & Social Responsibility -->
+                    <li>
+                        <h3 class="sample-list-category">Corporate Communications & Social Responsibility</h3>
+                        <p class="sample-list-description">A collection of public-facing statements that define corporate values, ethics, and community engagement, demonstrating a versatile, brand-aligned writing style.</p>
+                        <div class="sample-list-links">
+                            <a href="samples/DEI.pdf" target="_blank">Diversity, Equity, & Inclusion (DEI) Policy</a>
+                            <a href="samples/Sustainability Statement.pdf" target="_blank">Sustainability Statement</a>
+                            <a href="samples/Community Investment Statement.pdf" target="_blank">Community Investment Statement</a>
+                        </div>
+                    </li>
 
+                    <!-- Category 5: Process, Standards, & Templates -->
+                    <li>
+                        <h3 class="sample-list-category">Process, Standards, & Templates</h3>
+                        <p class="sample-list-description">A collection of "meta-documents" that define standards, including style guides, checklists for complex processes, and strategic infographics.</p>
+                        <div class="sample-list-links">
+                            <a href="samples/Style Guide.pdf" target="_blank">Proposal & Documentation Style Guide</a>
+                            <a href="samples/Final Review Checklist .pdf" target="_blank">Proposal Final Review Checklist</a>
+                            <a href="samples/Compliance Checklist AI.pdf" target="_blank">Infographic: Compliance "Kill List"</a>
+                            <a href="samples/The Anatomy of a Strong RFP Response AI.pdf" target="_blank">Infographic: Anatomy of a Strong RFP</a>
+                            <a href="samples/Use AI to Improve Your RFP & Technical Writing.pdf" target="_blank">Infographic: Using AI for RFP Writing</a>
+                        </div>
+                    </li>
 
+                </ul>
+            </div>
+        </section>
 
-  <!-- ===== WORK SAMPLES ===== -->
-    <section>
-      <h2>Selected Work Samples</h2>
-      <h6>All items in my portfolio are from various clients and have been redacted to remove any confidential or identifying information.</h6>
-      <dl>
-        <dt>Security & Compliance</dt>
-        <dd>A collection of meticulously crafted documents aimed at ensuring adherence to external compliance standards and regulatory requirements. These include audit reports, security policies, compliance checklists, and documentation for standards such as SOC2, VPAT, and State/FEDRAMP. Each document is designed to meet stringent regulatory guidelines and enhance organizational security posture.</dd>
-        <ul>
-          <li><a href="samples/SteffHarrySE_SSP_A_CMP_V1_20220901.pdf">Configuration Management Policy (CMP)</a> - Written in compliance with TX-RAMP requirements</li>
-          <li><a href="samples/SteffHarrySE_SSP_A_ISCM_V1_20220901.pdf">Information System Continuous Monitoring Plan (ISCM)</a> - Written in compliance with TX-RAMP requirements</li>
-          <li><a href="samples/steffHarry-Redacted- AT_POL_V1.0_20220901.pdf">Security Policy for Awareness & Training</a> - Written in compliance with TX-RAMP requirements</li>
-        </ul>
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-500">
+            <p>&copy; 2025 Stephanie Harry. Built with HTML, Tailwind CSS, and a whole lot of late nights.</p>
+        </footer>
 
-        <dt>Training & Manuals - Client Facing</dt>
-        <dd>Comprehensive training and help documents designed for clients. These resources include both technical and non-technical materials, such as user manuals, FAQs, step-by-step guides, and video tutorials. Each document is crafted to enhance user understanding, simplify complex concepts, and ensure a seamless client experience with our products and services.</dd>
-        <ul>
-          <li><a href="samples/About SSO - Redacted Sharry.pdf">About SSO</a></li>
-          <li><a href="samples/SteffHarry_ClientFacingSecurity - Redacted.pdf">Security Overview</a></li>
-        </ul>
+    </div>
 
-        <dt>Employee/Internal</dt>
-        <dd>Internal training documents aimed at equipping employees with essential knowledge and skills. Here you'll find materials on various policies and procedures, product knowledge, and compliance requirements. These documents are designed to foster a well-informed workforce, streamline onboarding processes, and ensure consistent adherence to company standards.</dd>
-        <ul>
-          <li><a href="samples/Redacted Security Training  stephanieharry.pdf">Security Training</a></li>
-          <li><a href="samples/SteffHarry_Redacted_updated Security and Use Policy.pdf">Security and Use Policy</a></li>
-          <li><a href="samples/SteffHarryRedacted Data Integration.pdf">Data Integration Training</a></li>
-        </ul>
-
-        <dt>Other</dt>
-        <dd>Documents that do not fit in the above categories.</dd>
-        <ul>
-          <li><a href="samples/Template RFP Response Version1 stephanieharry.pdf">RFP Template</a> - This is an outline template that could be used. The contents are an outline, styling, and directions for WCAG compliance and overall usage of the template.</li>
-        </ul>
-      </dl>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        📧 <a href="mailto:steffharry@smarciz.com">steffharry@smarciz.com</a><br/>
-        🔗 <a href="https://linkedin.com/in/smarciz" target="_blank">linkedin.com/in/smarciz</a>
-      </p>
-    </section>
-  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
